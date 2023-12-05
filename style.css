@@ -1,6 +1,6 @@
 body {
   background-image: url("media/clouds3.jpg");
-  background-size: cover;
+  background-size: 1800px 1000px;
   background-repeat: no-repeat;
 }
 
@@ -99,6 +99,11 @@ footer {
   text-align: center;
   font-size: 40px;
   padding: 5px;
+}
+
+.form-control {
+  fill: none;
+  background: #57524f0c;
 }
 
 .temperature-high {
