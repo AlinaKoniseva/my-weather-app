@@ -1,7 +1,12 @@
 body {
-  background-image: url("media/clouds3.jpg");
-  background-size: 1800px 1000px;
-  background-repeat: no-repeat;
+  background: linear-gradient(
+    89.9deg,
+    rgb(208, 246, 255) 0.1%,
+    rgb(255, 237, 237) 47.9%,
+    rgb(255, 255, 231) 100.2%
+  );
+  height: 100vh;
+  margin: 0;
 }
 
 h1 {
