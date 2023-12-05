@@ -63,13 +63,12 @@ a {
   padding-left: 9px;
 }
 
-.fa-moon {
+#icon {
   position: fixed;
-  left: 55%;
-  top: 150px;
-  font-size: 140px;
+  left: 52%;
+  top: 112px;
+  width: 200px;
   color: rgba(4, 4, 116, 0.822);
-  opacity: 0.8;
 }
 
 .weekdays {

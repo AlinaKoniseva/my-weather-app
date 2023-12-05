@@ -65,6 +65,9 @@ function displayTemperature(response) {
   let humidity = response.data.temperature.humidity;
   humidityElement.innerHTML = humidity;
 
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute("src", `${response.data.condition.icon_url}`);
+
   let country = response.data.country;
   let countryElement = document.querySelector(".country");
   countryElement.innerHTML = country;
@@ -95,7 +98,3 @@ hour.innerHTML = now.getHours();
 
 let minute = document.querySelector(".minutes");
 minute.innerHTML = now.getMinutes();
-
-//Improve the project including the search engine, API integration, wind speed, weather description, and weather icon are mandatory. The project should not include the forecast yet.
-
-//Host your project on Netlfiy, and at the bottom of your page, link to your GitHub repository.
