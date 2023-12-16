@@ -3,19 +3,20 @@ body {
   height: 100vh;
   margin: 0;
 }
-
 h1 {
   font-family: Poppins, arial, sans-serif;
   font-weight: 400;
   font-size: 56px;
   line-height: 56px;
-  padding: 15px 15px 5px 33px;
+  padding: 15px 15px 5px 0px;
   margin: 0;
 }
 
 ul {
   margin: 0;
-  padding: 0 0 0 20px;
+  padding-left: 0rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 li {
   list-style-type: none;
@@ -31,6 +32,7 @@ footer {
   font-size: 12px;
   color: rgba(0, 0, 0, 0.6);
 }
+
 
 .link {
   text-decoration: underline;
@@ -60,30 +62,31 @@ footer {
 }
 
 .location-date,
-.weather-units {
+.weather-units,
+.weather-app-location {
   display: block;
   margin: 0;
   padding: 0;
 }
-.location-date {
+.location-date,
+.weather-app-location {
   color: #70757a;
   font-size: 16px;
   line-height: 16px;
-  padding-left: 9px;
 }
+
 .weather-units {
   color: #70757a;
   font-size: 12px;
   line-height: 12px;
-  padding-left: 9px;
 }
 
-.icon {
-  position: fixed;
-  left: 53%;
-  top: 112px;
-  width: 180px;
-  color: rgba(4, 4, 116, 0.822);
+.main-icon {
+ width: 120px;
+ position: fixed;
+ top: 20%;
+ right: 37%;
+
 }
 
 
@@ -93,10 +96,6 @@ footer {
   background: #57524f0c;
 }
 
-.row {
-  display: flex;
-  justify-content: center;
-}
 
 .weather-forecast-date {
   font-size: 16px;
@@ -111,4 +110,9 @@ footer {
 .weather-forecast-temperature-min {
   opacity: 0.6;
 
+}
+
+#forecast {
+  display: flex;
+  justify-content: center;
 }
