@@ -17,13 +17,14 @@
   </head>
   <body>
     <div class="container weather-app">
-      <form>
+      <form class="search-form" id="search-form">
         <div class="row">
           <div class="col-9">
             <input
               type="search"
               placeholder="Search city"
-              class="form-control"
+              class="search-form-input"
+              id="search-form-input"
             />
           </div>
           <div class="col">
@@ -36,16 +37,16 @@
 <main>
   <div class="weather-app-data">
     <div>
-      <h1 class="weather-app-temperature">7°C|<a href="#">°F</a></h1>
-      <img src="https://static.vecteezy.com/system/resources/previews/009/266/750/original/sun-icon-design-free-png.png" alt="sun-icon" class="main-icon">
+      <h1 class="weather-app-temperature"><span class="temperature">7</span>°C<a href="#" id="fahrenheit">|°F</a></h1>
+      <img src="https://static.vecteezy.com/system/resources/previews/009/266/750/original/sun-icon-design-free-png.png" alt="sun-icon" id="main-icon">
         <div class="weather-app-location">
-          <span class="weather-app-city">Aalborg</span>,
-          <span class="weather-app-country">Denmark</span>
+          <span id="weather-app-city">Aalborg</span>,
+          <span id="weather-app-country">Denmark</span>
         
        
         <div class="location-date">
-          <span class="day">Monday</span>, <span class="date">16</span>th of
-          <span class="month">October</span> <span class="year">2023</span>
+          <span id="date">16</span>th of
+          <span id="month">October</span> <span id="year">2023</span>
         </div>
         <div class="location-date" id="time">
           <span class="hours">20</span>:<span class="minutes">35</span>
@@ -54,7 +55,7 @@
 
     </div>
       <ul>
-        <li class="weather-units">11°C ⬆️ 5°C ⬇️</li>
+        <li class="weather-units"> <span id="highest-temp">11</span>°C ⬆️ <span id="lowest-temp">5</span>°C ⬇️</li>
         <li class="weather-units">wind: <span id="wind-speed">4</span> m/s</li>
         <li class="weather-units">humidity: <span id="humidity">82</span>%</li>
       </ul>

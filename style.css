@@ -81,8 +81,8 @@ footer {
   line-height: 12px;
 }
 
-.main-icon {
- width: 120px;
+#main-icon {
+ width: 128px;
  position: fixed;
  top: 20%;
  right: 37%;
@@ -90,10 +90,13 @@ footer {
 }
 
 
-
-.form-control {
+#search-form-input {
   fill: none;
   background: #57524f0c;
+  border-radius: 4px;
+  border: solid 1px #70757a;
+  width: 400px;
+  height: 39px;
 }
 
 
@@ -115,4 +118,8 @@ footer {
 #forecast {
   display: flex;
   justify-content: center;
+}
+
+#fahrenheit {
+  font-size: 25px;
 }
