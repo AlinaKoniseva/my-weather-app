@@ -131,3 +131,8 @@ footer {
 .weather-summary {
   padding-left: 15px;
 }
+
+.btn-primary {
+  background-color: #665F9E;
+  border: none;
+}
