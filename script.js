@@ -2,6 +2,7 @@ function refreshWeather(response) {
   let temperatureElement = document.querySelector(".temperature");
   let cityElement = document.querySelector("#weather-app-city");
   let countryElement = document.querySelector("#weather-app-country");
+  let descriptionElement = document.querySelector("#weather-description");
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("#time");
@@ -35,10 +36,11 @@ function refreshWeather(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}`;
   windSpeedElement.innerHTML = Math.round(response.data.wind.speed);
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
-  iconElement.innerHTML = response.data.condition.icon_url;
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" alt="weather-icon" width="200" height="200">`;
   dateElement.innerHTML = now.getDate();
   monthElement.innerHTML = months[now.getMonth()];
   yearElement.innerHTML = now.getFullYear();
+  descriptionElement.innerHTML =response.data.condition.description;
 
   getForecast(response.data.city);
   console.log(date);

@@ -63,7 +63,8 @@ footer {
 
 .location-date,
 .weather-units,
-.weather-app-location {
+.weather-app-location
+ {
   display: block;
   margin: 0;
   padding: 0;
@@ -82,10 +83,9 @@ footer {
 }
 
 #main-icon {
- width: 128px;
  position: absolute;
- top: 15%;
- right: 40%;
+ top: 13%;
+ right: 38%;
 
 }
 
@@ -122,4 +122,8 @@ footer {
 
 #fahrenheit {
   font-size: 25px;
+}
+
+#weather-description {
+  font-style: italic;
 }
