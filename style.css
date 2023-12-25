@@ -127,3 +127,7 @@ footer {
 #weather-description {
   font-style: italic;
 }
+
+.weather-summary {
+  padding-left: 15px;
+}
